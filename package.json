@@ -1,0 +1,34 @@
+
+{
+    "name": "Arrow_Functional_Tests",
+    "description": "Arrow functional tests",
+    "version": "0.0.1",
+    "author": {
+        "name": "Pranav Parikh",
+        "email": "pranavp@yahoo-inc.com"
+    },
+    "yahoo": {
+        "bugzilla": {
+            "product": "Arrow",
+            "component": "Arrow"
+        },
+        "custodian": {
+            "email": "pranavp@yahoo-inc.com",
+            "url": "http://dev.null.com"
+        }
+    },
+
+    "scripts": {
+        "component-test":"./node_modules/.bin/arrow 'descriptors/*-descriptor.json' --browser={yourBrowser} --driver=selenium --seleniumHost={yourSeleniumHost} --report=true",
+        "smoke-test":"./node_modules/.bin/arrow 'descriptors/*-descriptor.json' --browser={yourBrowser} --driver=selenium --seleniumHost={yourSeleniumHost} --report=true",
+        "func-test":"./node_modules/.bin/arrow 'descriptors/*-descriptor.json' --browser={yourBrowser} --driver=selenium --seleniumHost={yourSeleniumHost} --report=true"
+    },
+
+    "dependencies": {
+        "yahoo-arrow": "*"
+    },
+    "engines": {
+        "node": ">0.6"
+    }
+
+}
